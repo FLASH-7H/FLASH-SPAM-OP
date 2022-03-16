@@ -1427,15 +1427,15 @@ async def spam(e):
 @wal.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 @aaa.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 @boy.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-
 async def ping(e):
     if e.sender_id in SMEX_USERS:
         start = datetime.now()
-        text = "PONG!!"
+        text = "Pong!"
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"𝙁𝙇𝘼𝙎𝙃 !\n`{ms}` 𝗺𝘀\n           ⚔️𝙁𝙇𝘼𝙎𝙃 𝗦𝗣𝗔𝗠𝗕𝗢𝗧⚔)
+        await event.edit(f"🤤𝐆𝐀𝐍𝐃 !\n`{ms}` 𝗺𝘀\n           ⚔️𝙁𝙇𝘼𝙎𝙃 𝗦𝗣𝗔𝗠𝗕𝗢𝗧⚔️")
+        
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
